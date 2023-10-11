@@ -1,124 +1,74 @@
-<!DOCTYPE HTML>
-<!--
-	Full Motion by TEMPLATED
-	templated.co @templatedco
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
--->
+<!DOCTYPE html>
 <html>
-	<head>
-		<title>Full Motion</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body id="top">
+<head>
+    <style>
+        /* Style for the banner at the top */
+        .banner {
+            background-color: #3498db; /* Same color as the circles */
+            padding: 30px; /* Increased padding for the banner */
+        }
 
-			<!-- Banner -->
-			<!--
-				To use a video as your background, set data-video to the name of your video without
-				its extension (eg. images/banner). Your video must be available in both .mp4 and .webm
-				formats to work correctly.
-			-->
-				<section id="banner" data-video="images/banner">
-					<div class="inner">
-						<header>
-							<h1>Full Motion</h1>
-							<p>A responsive video gallery template with a functional lightbox<br />
-							designed by <a href="https://templated.co/">Templated</a> and released under the Creative Commons License.</p>
-						</header>
-						<a href="#main" class="more">Learn More</a>
-					</div>
-				</section>
+        /* Style for the title with a rounded font */
+        .title {
+            text-align: center;
+            font-size: 36px; /* Larger text size for the title */
+            margin: 0;
+            font-family: "Arial Rounded MT Bold", sans-serif; /* Use a rounded font */
+            color: white; /* Text color in the banner */
+        }
 
-			<!-- Main -->
-				<div id="main">
-					<div class="inner">
+        /* Style for the container */
+        .container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 50px; /* Adjust the margin to move the circles down */
+        }
 
-					<!-- Boxes -->
-						<div class="thumbnails">
+        /* Style for each circular link item with a shadow effect */
+        .link {
+            width: 100px;
+            height: 100px;
+            background-color: #3498db;
+            margin: 5px; /* Reduced margin to make circles closer together */
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add box-shadow transition */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            border-radius: 50%;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Add shadow effect */
+        }
 
-							<div class="box">
-								<a href="https://youtu.be/s6zR2T9vn2c" class="image fit"><img src="images/pic01.jpg" alt="" /></a>
-								<div class="inner">
-									<h3>Nascetur nunc varius commodo</h3>
-									<p>Interdum amet accumsan placerat commodo ut amet aliquam blandit nunc tempor lobortis nunc non. Mi accumsan.</p>
-									<a href="https://youtu.be/s6zR2T9vn2c" class="button fit" data-poptrox="youtube,800x400">Watch</a>
-								</div>
-							</div>
+        /* Style for the link hover effect */
+        .link:hover {
+            transform: scale(1.5); /* Scale the link from the center */
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7); /* Adjust shadow effect on hover */
+        }
 
-							<div class="box">
-								<a href="https://youtu.be/s6zR2T9vn2c" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
-								<div class="inner">
-									<h3>Nascetur nunc varius commodo</h3>
-									<p>Interdum amet accumsan placerat commodo ut amet aliquam blandit nunc tempor lobortis nunc non. Mi accumsan.</p>
-									<a href="https://youtu.be/s6zR2T9vn2c" class="button style2 fit" data-poptrox="youtube,800x400">Watch</a>
-								</div>
-							</div>
-
-							<div class="box">
-								<a href="https://youtu.be/s6zR2T9vn2c" class="image fit"><img src="images/pic03.jpg" alt="" /></a>
-								<div class="inner">
-									<h3>Nascetur nunc varius commodo</h3>
-									<p>Interdum amet accumsan placerat commodo ut amet aliquam blandit nunc tempor lobortis nunc non. Mi accumsan.</p>
-									<a href="https://youtu.be/s6zR2T9vn2c" class="button style3 fit" data-poptrox="youtube,800x400">Watch</a>
-								</div>
-							</div>
-
-							<div class="box">
-								<a href="https://youtu.be/s6zR2T9vn2c" class="image fit"><img src="images/pic04.jpg" alt="" /></a>
-								<div class="inner">
-									<h3>Nascetur nunc varius commodo</h3>
-									<p>Interdum amet accumsan placerat commodo ut amet aliquam blandit nunc tempor lobortis nunc non. Mi accumsan.</p>
-									<a href="https://youtu.be/s6zR2T9vn2c" class="button style2 fit" data-poptrox="youtube,800x400">Watch</a>
-								</div>
-							</div>
-
-							<div class="box">
-								<a href="https://youtu.be/s6zR2T9vn2c" class="image fit"><img src="images/pic05.jpg" alt="" /></a>
-								<div class="inner">
-									<h3>Nascetur nunc varius commodo</h3>
-									<p>Interdum amet accumsan placerat commodo ut amet aliquam blandit nunc tempor lobortis nunc non. Mi accumsan.</p>
-									<a href="https://youtu.be/s6zR2T9vn2c" class="button style3 fit" data-poptrox="youtube,800x400">Watch</a>
-								</div>
-							</div>
-
-							<div class="box">
-								<a href="https://youtu.be/s6zR2T9vn2c" class="image fit"><img src="images/pic06.jpg" alt="" /></a>
-								<div class="inner">
-									<h3>Nascetur nunc varius commodo</h3>
-									<p>Interdum amet accumsan placerat commodo ut amet aliquam blandit nunc tempor lobortis nunc non. Mi accumsan.</p>
-									<a href="https://youtu.be/s6zR2T9vn2c" class="button fit" data-poptrox="youtube,800x400">Watch</a>
-								</div>
-							</div>
-
-						</div>
-
-					</div>
-				</div>
-
-			<!-- Footer -->
-				<footer id="footer">
-					<div class="inner">
-						<h2>Etiam veroeros lorem</h2>
-						<p>Pellentesque eleifend malesuada efficitur. Curabitur volutpat dui mi, ac imperdiet dolor tincidunt nec. Ut erat lectus, dictum sit amet lectus a, aliquet rutrum mauris. Etiam nec lectus hendrerit, consectetur risus viverra, iaculis orci. Phasellus eu nibh ut mi luctus auctor. Donec sit amet dolor in diam feugiat venenatis. </p>
-
-						<ul class="icons">
-							<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-							<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-							<li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>
-						</ul>
-						<p class="copyright">&copy; Untitled. Design: <a href="https://templated.co">TEMPLATED</a>. Images: <a href="https://unsplash.com/">Unsplash</a>. Videos: <a href="http://coverr.co/">Coverr</a>.</p>
-					</div>
-				</footer>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.poptrox.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+        /* Style for the link text */
+        .link a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <h1 class="title">Some Projects</h1>
+    </div>
+    <div class="container">
+        <div class="link">
+            <a href="/Tic Tac Toe/">Tic Tac Toe</a>
+        </div>
+        <div class="link">
+            <a href="/Calculator/">Calculator</a>
+        </div>
+        <div class="link">
+            <a href="/Website/">Nice Website</a>
+        </div>
+    </div>
+</body>
 </html>

@@ -1,0 +1,51 @@
+/* Style for the banner at the top */
+.banner {
+    background-color: #3498db; /* Same color as the circles */
+    padding: 30px; /* Increased padding for the banner */
+}
+
+/* Style for the title with a rounded font */
+.title {
+    text-align: center;
+    font-size: 36px; /* Larger text size for the title */
+    margin: 0;
+    font-family: "Arial Rounded MT Bold", sans-serif; /* Use a rounded font */
+    color: white; /* Text color in the banner */
+}
+
+/* Style for the container */
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 50px; /* Adjust the margin to move the circles down */
+}
+
+/* Style for each circular link item with a shadow effect */
+.link {
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    margin: 5px; /* Reduced margin to make circles closer together */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add box-shadow transition */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Add shadow effect */
+}
+
+/* Style for the link hover effect */
+.link:hover {
+    transform: scale(1.5); /* Scale the link from the center */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7); /* Adjust shadow effect on hover */
+}
+
+/* Style for the link text */
+.link a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
